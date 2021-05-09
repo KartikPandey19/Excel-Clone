@@ -1,5 +1,5 @@
 body{
-    margin:0;
+    margin:0px;
 }
 
 *{
@@ -9,48 +9,50 @@ body{
 
 .menu-container{
     background-color: lightblue;
-    height:80px;
+    height:5rem;
 }
 .formula-container{
     background-color: rgb(121, 145, 153);
-    height:40px;
+    height:2rem;
 }
-.grid{
-    height:calc(100vh - (80px + 30px + 40px))
+.grid-container{
+    height:calc(100vh - (5rem + 2rem + 2.5rem));
+    background-color:lightgreen;
 }
-.sheets{
+.sheets-container{
     background-color: lightgray;
-    height:40px;
+    height:2.5rem;
     display: flex;
     
 }
-.add-sheet_container{
-    height: 100%;
-    width:30px;
-    border:1pc solid gray;
-    display:flex;
-    justify-content: center;
+.icon-container{
+    width:5%;
+    display: flex;
     align-items: center;
-}
-.icon{
-    font-size: 1.7rem;
-    color: lightgreen;
+    justify-content: center;
+    border:1px solid;
     
 }
 .sheets-list{
+    /* display: flex;
+    
+    
+    min-width: calc(100vw - 30px); */
     display: flex;
+    border:1px solid;
+    width:95%;
     height:100%;
     overflow-x: auto;
-    min-width: calc(100vw - 30px);
-    
 }
 .sheet{
-    width:60px;
-    height: 100%;
-    display: flex;
-    justify-content: center  ;
-    align-items: center;
+    border:1px solid;
+    height:100px;
+    min-width: 5rem;
+    padding-top:0.5rem;
+    padding-left:0.6rem
+   
 }
-.active-sheer{
-    background-color: white;
+.icon{
+    font-size: 1.7rem;
 }
+
