@@ -2,6 +2,7 @@ let iconcontainer = document.querySelector(".icon-container");
 let sheetList = document.querySelector(".sheet-list");
 let firstSheet = document.querySelector(".sheet");
 firstSheet.addEventListener("click",handleClick);
+
 iconcontainer.addEventListener("click",function(){
     // create new list
     let newSheet = document.createElement("div");
@@ -12,7 +13,7 @@ iconcontainer.addEventListener("click",function(){
     newSheet.setAttribute("idx", Number(idx) + 1);
     // newSheet.setAttribute("idx", `${Number(idx)+1}`);
     // text set
-    newSheet.innerText = `Sheet- $(Number(idx) + 2}`;
+    newSheet.innerText = `Sheet- ${Number(idx) + 2}`;
     // set class
     newSheet.setAttribute("class","sheet");
     // append
