@@ -18,6 +18,7 @@ body{
 .grid-container{
     height:calc(100vh - (5rem + 2rem + 2.5rem));
     background-color:lightgreen;
+    overflow: auto;
 }
 .sheets-container{
     background-color: lightgray;
@@ -31,18 +32,21 @@ body{
     align-items: center;
     justify-content: center;
     border:1px solid;
-    
 }
 .sheet-list{
-    /* display: flex;
-    
-    
-    min-width: calc(100vw - 30px); */
-    display: flex;
     border:1px solid;
     width:95%;
+    display: flex;
     height:100%;
     overflow-x: auto;
+}
+.sheet-list::-webkit-scrollbar {
+    display: none;
+}
+
+.sheet-list {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 .sheet{
     border:1px solid;
@@ -56,3 +60,34 @@ body{
     font-size: 1.7rem;
 }
 
+.active{
+    background-color: white;
+}
+
+
+/*grid*/
+.top-left_block{
+    border: 1px solid;
+    width:2rem;
+    height:2rem;
+    background-color: darkGray;
+  
+
+}
+.top-row{
+    border: 1px solid;
+    display: flex
+
+}
+.grid{}
+ 
+.left-col{
+       
+}
+
+.cell{
+    height: 2rem;
+    min-width: 5rem;
+    border: 1px solid;
+    text-align: center;
+}
