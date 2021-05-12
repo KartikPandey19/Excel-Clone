@@ -67,12 +67,14 @@ body{
 
 /*grid*/
 .top-left_block{
+   
+    background-color: darkGray;
+}
+.block{
     border: 1px solid;
     width:2rem;
     height:2rem;
-    background-color: darkGray;
-  
-
+    text-align: center;
 }
 .top-row{
     border: 1px solid;
@@ -90,4 +92,7 @@ body{
     min-width: 5rem;
     border: 1px solid;
     text-align: center;
+}
+.row{
+    display: flex;
 }
