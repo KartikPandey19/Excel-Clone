@@ -38,7 +38,7 @@ for (let i = 0; i < rows; i++) {
                fontfamily:"sans-serif",
                fontSize:16,
                color:"black",
-               bgColor:""
+               bgColor:"",
           }
           rowArr.push(cellObj);
      }
