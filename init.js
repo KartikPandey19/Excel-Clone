@@ -21,10 +21,22 @@ for (let i = 0; i < rows; i++) {
      let row = document.createElement("div");
      row.setAttribute("class", "row");
      for (let j = 0; j < columns; j++) {
-          let div = document.createElement("div")
-          div.innerText = `${i} ${String.fromCharCode(65 + j)}`;
-          div.setAttribute("class", "cell");
-          row.appendChild(div);
+          let col = document.createElement("div")
+          col.setAttribute("class", "cell");
+          col.setAttribute("rid",i);
+          col.setAttribute("cid",j);
+          row.appendChild(col );
      }
      grid.appendChild(row);
+}
+let Allcells = document.querySelectorAll(".grid .cell");
+let addressElement = document.querySelector(".address");
+for(let i=0;i<Allcells.length;i++){
+Allcells[i].addEventListener("click",function(){
+     let cid = Allcells[i].getAttribute("cid");
+     let rid = Allcells[i].getAttribute("rid");
+     cid = Number(cid);
+     rid = Number(rid); 
+     addressElement.value = `${String.fromCharCode(65+cid)} ${rid+1}`
+})    
 }
