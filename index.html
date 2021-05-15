@@ -6,24 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="menu-container">
-        <div class="nos-container"></div>
-        <select name="" id="" class="font-size"></select>
-       <div class="select font-family"></div>
-        <div class="formatting-container"></div>
-        <div class="alignment-container"></div>
+        <div class="nos-container">
+            <i class="far fa-envelope-open menu-icon"></i>
+            <i class="fas fa-plus-circle menu-icon"></i>
+            <i class="fas fa-file-download menu-icon"></i>
+        </div>
+        <select name="" id="" class="font-size">
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16" selected>16</option>
+            <option value="18">18</option>
+            <option value="22">22</option>
+
+        </select>
+        <select class="font-family">
+            <option value="sans-serif">font-1</option>
+            <option value="tahoma">font-2</option>
+            <option value="Georgia">font-3</option>
+            <option value="sans">font-4</option>
+        </select>
+        <div class="formatting-container">
+            <i class="fas fa-bold menu-icon"></i>
+            <i class="fas fa-italic menu-icon"></i>
+            <i class="fas fa-underline menu-icon"></i>
+        </div>
+        <div class="alignment-container">
+            <i class="fas fa-align-left"></i>
+            <i class="fas fa-align-right"></i>
+            <i class="fas fa-align-center"></i>
+        </div>
+        <div class="color-container">
+            <input type="color" name="" id=""class="bg-color">
+            <input type="color" name="" id=""class="color">
+        </div>
     </div>
     <div class="formula-container">
         <input type="text" name="" id="" class="address">
         <input type="text" name="" id="" class="formula">
     </div>
     <div class="grid-container">
-        <div class="top-left_block block">top</div>
+        <div class="top-left_block block"> </div>
         <div class="top-row"></div>
         <div class="left-col"></div>
         <div class="grid"></div>
@@ -38,6 +67,7 @@
     </div>
     <script src="init.js"></script>
     <script src=" script.js "></script>
+    <script src="formatting.js"></script>
 </body>
 
-</html>
+</html>  
