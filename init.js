@@ -17,7 +17,7 @@ for (let i = 1; i <= rows; i++) {
      div.setAttribute("class", "block");
      leftcol.appendChild(div);
 }
-let sheetArr=[];
+let sheetArr = [];
 
 for (let i = 0; i < rows; i++) {
      let row = document.createElement("div");
@@ -27,18 +27,19 @@ for (let i = 0; i < rows; i++) {
           // UI
           let cell = document.createElement("div")
           cell.setAttribute("class", "cell");
-          cell.setAttribute("rid",i);
-          cell.setAttribute("cid",j);
-          cell.setAttribute("contenteditable","true");
+          cell.setAttribute("rid", i);
+          cell.setAttribute("cid", j);
+          cell.setAttribute("contenteditable", "true");
           row.appendChild(cell);
-          let cellObj={
-               isBold:false,
-               isItalic:false,
-               isUnderline:false,
-               fontfamily:"sans-serif",
-               fontSize:16,
-               color:"black",
-               bgColor:"",
+          let cellObj = {
+               isBold: false,
+               isItalic: false,
+               isUnderline: false,
+               fontfamily: "sans-serif",
+               fontSize: 16,
+               color: "black",
+               bgColor: "",
+               halign:"center"
           }
           rowArr.push(cellObj);
      }
