@@ -49,17 +49,17 @@ function getRIdIdfromAddress() {
   return { cid, rid };
 }
 for (let i = 0; i < alignmentbtns.length; i++) {
-  alignment[i].onclick = function () {
+  alignmentbtns[i].onclick = function () {
     let uiCell = getcell();
     let { rid, cid } = getRIdIdfromAddress();
     let cellObj = sheetArr[rid][cid];
-    let newAlignment = alignmentbtns[i].getAttribute(".direct")
+    let newAlignment = alignmentbtns[i].getAttribute("direct")
     uiCell.style.textAlign = newAlignment;
     for (let j = 0; j < alignmentbtns.length; j++) {
       alignmentbtns[j].classList.remove("menu-active");
     }
     alignmentbtns[i].classList.add("menu-active");
-    cellObj.halign - newAlignment
+    cellObj.halign - newAlignment;
   }
 }
 let Allcells = document.querySelectorAll(".grid .cell");

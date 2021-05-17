@@ -39,7 +39,8 @@ for (let i = 0; i < rows; i++) {
                fontSize: 16,
                color: "black",
                bgColor: "",
-               halign:"center"
+               halign:"center",
+               value:""
           }
           rowArr.push(cellObj);
      }
