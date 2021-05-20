@@ -3,6 +3,7 @@ for (let i = 0; i < Allcells.length; i++) {
         let {rid,cid} = getRIdIdfromAddress();
         let cellObj = sheetArr[rid][cid];
         cellObj.value = Allcells[i].innerText;
+        cellObj.value = Allcells[i].innerText;
 
     })
     }
